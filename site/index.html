@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Home</title>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+  <script>
+    $(document).ready(function() {
+      $("#navbar").load("navbar.html");
+    });
+  </script>
+
+  <div class="pt-5 mt-3 text-center">
+    <h1>Welcome</h1>
+  </div>
+
+  <!-- About Cards -->
+  <div class="row row-cols-1 row-cols-md-2 g-4 mx-auto mw-100 justify-content-center">
+    <div class="col-lg-4">
+      <div class="card text-bg-light mb-3">
+        <div class="card-body text-justify">
+          <h5 class="card-title text-center">About This Site</h5>
+          <p class="card-text">This website is created to showcase my portfolio in Web Development and Multimedia.
+            This site is made to demonstrate my skills with front-end web development as well as my previous works on animation, video editing, and illustrations.
+            <br>It is created with <b>HTML, Bootstrap 5, and JavaScript</b> while keeping responsiveness in mind.
+            On the other hand, my multimedia projects shows my skills in imaging and video editing.
+            I do hope you enjoy the content that is presented on this website.
+            Cheers!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card text-bg-light mb-3">
+        <img src="images/logo.png" class="card-img-top w-50 mx-auto mt-3" alt="photo">
+        <div class="card-body text-justify">
+          <h5 class="card-title text-center">About Me</h5>
+          <p class="card-text">Hi, my name is Gianluca.
+            <br>Born and raised in Indonesia and spent 8 years abroad in Melbourne, Australia.
+            I graduated from RMIT University with a Bachelor's degree in Design and a Master's degree in IT from Swinburne University.
+            I'm currently seeking employment in both the IT and multimedia fields.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <span class="mb-3 mb-md-0 text-muted">Created by: Gianluca MT</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3">
+        <a class="text-muted" href="https://www.linkedin.com/in/gianluca-tanuwijaya-413345167/">
+          <img class="bi" width="24" height="24" src="images/linkedin.png" alt="">
+        </a>
+      </li>
+      <li class="ms-3">
+        <a class="text-muted" href="https://www.youtube.com/user/Arcliff7/">
+          <img class="bi" width="24" height="24" src="images/yt.png" alt="">
+        </a>
+      </li>
+    </ul>
+  </footer>
+</div>
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+
+</html>

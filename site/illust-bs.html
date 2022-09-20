@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Illustrations</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+  <script>
+    $(document).ready(function() {
+      $("#navbar").load("navbar.html");
+    });
+  </script>
+
+  <!-- Header and Buttons-->
+  <div class="pt-5 mt-3 text-center">
+    <h1>Illustrations</h1>
+    <p>A collection of past artworks. <br> Click the buttons to change the grid view. <br> Click an image to view it in focus. </p>
+    <div class="pb-4 btn-group" id="myHeader">
+      <div class="text-center">
+        <button type="button" class="shadow-sm btn btn-secondary active" onclick="one()">1</button>
+        <button type="button" class="shadow-sm btn btn-secondary" onclick="two()">2</button>
+        <button type="button" class="shadow-sm btn btn-secondary" onclick="four()">4</button>
+      </div>
+    </div>
+  </div>
+<!-- Container -->
+<div class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
+  <!-- Image Grid -->
+  <div class="row mx-auto mw-100 text-bg-light">
+    <div class="column">
+      <img class="w-100 shadow mt-2 thumb" src="images/shizurin.jpg" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <img class="w-100 shadow mt-2" src="images/shizurin2.png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <img class="w-100 shadow mt-2" src="images/naru.jpg" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    </div>
+
+    <div class="column">
+      <img class="w-100 shadow mt-2" src="images/heruka.jpg" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <img class="w-100 shadow mt-2" src="images/gran_no.png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <img class="w-100 shadow mt-2" src="images/kaede.jpg" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    </div>
+
+    <div class="column">
+      <img class="w-100 shadow mt-2" src="images/minami.jpg" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <img class="w-100 shadow mt-2" src="images/gbf.png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <img class="w-100 shadow mt-2" src="images/glasses.png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <img class="w-100 shadow mt-2" src="images/tama.png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    </div>
+
+    <div class="column">
+      <img class="w-100 shadow mt-2" src="images/rongrong.jpg" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <img class="w-100 shadow mt-2" src="images/jeanne.jpg" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    </div>
+  </div>
+
+  <!-- Modal Image -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="item">
+            <img id="modalImage" class="img-fluid rounded mx-auto d-block" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- End of Image Grid -->
+</div>
+
+<!-- Footer -->
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <span class="mb-3 mb-md-0 text-muted">Created by: Gianluca MT</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3">
+        <a class="text-muted" href="https://www.linkedin.com/in/gianluca-tanuwijaya-413345167/">
+          <img class="bi" width="24" height="24" src="images/linkedin.png" alt="">
+        </a>
+      </li>
+      <li class="ms-3">
+        <a class="text-muted" href="https://www.youtube.com/user/Arcliff7/">
+          <img class="bi" width="24" height="24" src="images/yt.png" alt="">
+        </a>
+      </li>
+    </ul>
+  </footer>
+</div>
+
+  <!-- Javascript -->
+  <script src="scripts/modal_img.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="scripts/img_grid.js" charset="utf-8"></script>
+</body>
+
+</html>
